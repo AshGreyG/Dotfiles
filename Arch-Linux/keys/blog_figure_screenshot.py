@@ -15,7 +15,8 @@ def move(src_path : str, dst_path : str) -> None :
             src_file = os.path.join(src_path, file)
             dst_file = os.path.join(dst_path, file)
             print(f"Move {src_file}\nto {dst_file}")
-            img_str += "![](figure/" + file + ")\n"
+            img_str += "![](https://picbed/huaier-ashgrey.top/figure/" + file + ")\n"
+            img_str.replace(" ", "%20")
             shutil.copy(src_file, dst_path)
             os.remove(src_file)
         if added_files :
