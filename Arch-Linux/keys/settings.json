@@ -1,0 +1,249 @@
+{
+"[python]": {
+    "editor.formatOnType": true
+},
+"security.workspace.trust.untrustedFiles": "open",
+"editor.acceptSuggestionOnEnter": "off",
+"editor.unicodeHighlight.nonBasicASCII": false,
+"editor.unicodeHighlight.includeComments": false,
+"settingsSync.ignoredExtensions": [
+
+],
+"settingsSync.ignoredSettings": [
+
+],
+"python.defaultInterpreterPath": "/usr/bin/python",
+"extensions.autoUpdate": false,
+"terminal.integrated.fontWeightBold": "bold",
+"editor.unicodeHighlight.allowedCharacters": {
+    "，": true,
+    "（": true,
+    "）": true,
+    "：": true,
+    "；": true,
+    "？": true,
+    "！": true,
+    "。": true
+},
+"debug.onTaskErrors": "debugAnyway",
+"explorer.confirmDelete": false,
+"editor.minimap.size": "fill",
+"cmake.configureOnOpen": true,
+"4400-on-vscode.alert": false,
+"window.titleBarStyle": "custom",
+"vscode_vibrancy.opacity": 0.5,
+"editor.cursorSmoothCaretAnimation": "on",
+"editor.tokenColorCustomizations": {
+    "[Tokyo Night Storm]": { // or "[Tokyo Night Storm]"
+        "textMateRules": [{
+            "scope": [
+                "comment",
+                "meta.var.expr storage.type",
+                "keyword.control.flow",
+                "keyword.control.return",
+                "meta.directive.vue punctuation.separator.key-value.html",
+                "meta.directive.vue entity.other.attribute-name.html",
+                "tag.decorator.js entity.name.tag.js",
+                "tag.decorator.js punctuation.definition.tag.js",
+                "storage.modifier"
+            ],
+            "settings": {
+                "fontStyle": ""
+            }
+        }]
+    }
+},
+"files.associations": {
+    "*.in": "c"
+},
+"cmake.showOptionsMovedNotification": false,
+"explorer.confirmDragAndDrop": false,
+"clangd.path": "/usr/bin/clangd",
+"clangd.arguments": [
+    "--background-index",
+    "--compile-commands-dir=${workspaceFolder}/build/",
+    "-j=4",
+    "--completion-style=detailed",
+    "--query-driver=/usr/bin/g++",
+    "--header-insertion=never"
+],
+"workbench.iconTheme": "catppuccin-mocha",
+"clangd.checkUpdates": false,
+"editor.inlayHints.enabled": "off",
+"workbench.startupEditor": "none",
+"editor.minimap.renderCharacters": false,
+"editor.renderWhitespace": "all",
+"editor.renderControlCharacters": false,
+"editor.insertSpaces": true,
+"editor.fontFamily": "'Hack Nerd Font', 'Noto Color Emoji', STZhongsong",
+"vim.leader": "<space>",
+"editor.lineNumbers": "relative",
+"vim.easymotion": true,
+"vim.useSystemClipboard": true,
+"vim.useCtrlKeys": true,
+"vim.hlsearch": true,
+"vim.normalModeKeyBindingsNonRecursive": [],
+"vim.normalModeKeyBindings": [
+    {
+        "before":["leader", "i"],
+        "commands":["extension.toggleBool"]
+    },
+    {
+        "before":["leader", "w"],
+        "commands":[":w!"]
+    },
+    {
+        "before":["leader", "q"],
+        "commands":[":wq!"]
+    },
+    {
+        "before":["<c-a>"],
+        "after":["g", "g", "V", "G"]
+    },
+    {
+        "before":["leader", "k"],
+        "commands":["editor.action.showHover"]
+    }, 
+    {
+        "before":["K"],
+        "commands":["editor.action.marker.nextInFiles"]
+    }, 
+    {
+        "before":["J"],
+        "commands":["editor.action.marker.prevInFiles"]
+    },
+    {
+        "before":["z", "z"],
+        "commands":["editor.toggleFold"]
+    },
+    {
+        "before":["leader", "c"],
+        "commands":["markdown.extension.editing.toggleCodeBlock"]
+    },
+    {
+        "before":["leader", "m"],
+        "commands":["markdown.extension.editing.toggleMath"]
+    }
+],
+"vim.insertModeKeyBindings": [
+    {
+        "before":["j", "k"],
+        "after":["<Esc>"]
+    }
+],
+"vim.handleKeys": {
+    "<C-d>": true,
+    "<C-s>": true,
+    "<C-z>": true
+},
+"workbench.editor.showTabs": "multiple",
+"editor.tabCompletion": "on",
+"editor.indentSize": "tabSize",
+"4399-on-vscode.alert": false,
+"catppuccin.italicComments": false,
+"catppuccin.italicKeywords": false,
+"wordcount_cjk.statusBarTextTemplate": "中文：${cjk}，英文：${en_words}",
+"terminal.integrated.enableMultiLinePasteWarning": "never",
+"terminal.integrated.commandsToSkipShell": [
+    "matlab.interrupt"
+],
+"update.showReleaseNotes": false,
+"polacode.target": "snippet",
+"workbench.activityBar.location": "top",
+"workbench.editorAssociations": {
+    "*.pdf": "overleaf-workshop.pdfViewer"
+},
+"window.customTitleBarVisibility": "windowed",
+"workbench.layoutControl.enabled": false,
+"window.menuBarVisibility": "toggle",
+"window.commandCenter": false,
+"cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+],
+"editor.stickyScroll.enabled": false,
+"editor.minimap.enabled": false,
+"editor.scrollbar.vertical": "hidden",
+"editor.scrollbar.verticalScrollbarSize": 0,
+"redhat.telemetry.enabled": false,
+
+"code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "zig": "zig run",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runghc",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "sml": "cd $dir && sml $fileName",
+    "mojo": "mojo run",
+    "erlang": "escript",
+    "spwn": "spwn build",
+    "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
+    "gleam": "gleam run -m $fileNameWithoutExt"
+},
+"cmake.cmakePath": "/usr/bin/cmake",
+"markdown.extension.toc.levels": "2..5",
+"markdown-preview-enhanced.enablePreviewZenMode": false,
+"markdown-preview-enhanced.previewTheme": "none.css",
+"markdown-preview-enhanced.codeBlockTheme": "github-dark.css",
+"markdown-preview-enhanced.mathRenderingOnlineService": "https://latex.codecogs.com/svg.latex",
+"markdown.extension.preview.autoShowPreviewToSide": true,
+"markdown-preview-enhanced.enableScriptExecution": true,
+"xml.format.preservedNewlines": 0,
+"xml.format.spaceBeforeEmptyCloseTag": false,
+"xml.foldings.includeClosingTagInFold": true,
+"editor.cursorBlinking": "smooth",
+"editor.rulers": [
+    {
+        "column": 120,
+        "color": "#1e1e2e"
+    }
+],
+"workbench.colorTheme": "Vitesse Dark"
+
+}
